@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Java from '../images/java_developer.png';
-import { useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard() {
   const classes = useStyles();
-const history = useHistory();
+  const history = useHistory();
   return (
     <Card className={classes.root}>
       <CardActionArea onClick={() => history.push('/java-pathway')}>
@@ -37,7 +37,7 @@ const history = useHistory();
           </Typography>
         </CardContent>
       </CardActionArea>
-     
+
     </Card>
   );
 }

@@ -11,11 +11,11 @@ const App = () => {
             <div>
                 <Header />
                 <div id="page-wrap">
-                <Switch>
-                <Route path= "/" exact ><MainPage /></Route>
-                <Route path= "/java-pathway" ><JavaPathway /></Route>
-                <Route path= "/java-course" ><JavaCourse /></Route>
-                </Switch>
+                    <Switch>
+                        <Route path="/" exact ><MainPage /></Route>
+                        <Route path="/java-pathway" ><JavaPathway /></Route>
+                        <Route path="/java-course" ><JavaCourse /></Route>
+                    </Switch>
                 </div>
             </div>
         </Router>
