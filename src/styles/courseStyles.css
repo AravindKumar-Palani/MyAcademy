@@ -1,0 +1,8 @@
+.upcomingCourseDetails {
+    margin: 10px;
+}
+
+.completedCourseDetails {
+    margin: 10px;
+    background-color: #E0E0E0 !important;
+}

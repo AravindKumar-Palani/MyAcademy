@@ -1,0 +1,41 @@
+[{
+        "day": "Day 1",
+        "content": ["Setting up workspace", "Learning on source controls", "Commiting to Git repo", "Learning on Maven usage", "Deployment", "Coding Standards", "Coding Environment"],
+        "completedStatus": "true"
+    },
+    {
+        "day": "Day 2",
+        "content": ["Microservices", "Agile methodology", "Java decompiler", "Jira", "Project development models", "GIT - resolving conflicts"],
+        "completedStatus": "true"
+    },
+    {
+        "day": "Day 3",
+        "content": ["CICD Pipeline", "Initial code development review - Design discussion"],
+        "completedStatus": "false"
+    },
+    {
+        "day": "Day 4",
+        "content": ["Cloud", "Coding - Development"],
+        "completedStatus": "false"
+    },
+    {
+        "day": "Day 5",
+        "content": ["Kibana", "Integration Discussion - 1"],
+        "completedStatus": "false"
+    },
+    {
+        "day": "Day 6",
+        "content": ["Building rest applications", "Integration Discussion - 2"],
+        "completedStatus": "false"
+    },
+    {
+        "day": "Day 7",
+        "content": ["Docker", "Code Review"],
+        "completedStatus": "false"
+    },
+    {
+        "day": "Day 8",
+        "content": ["Coding Best Practises", "Movie App Deployment"],
+        "completedStatus": "false"
+    }
+]

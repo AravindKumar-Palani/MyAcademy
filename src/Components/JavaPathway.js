@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles } from '@material-ui/core/styles';
-import { useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -87,7 +87,7 @@ const JavaPathway = () => {
                     </AccordionDetails>
                 </Accordion>
 
-                <Accordion  className={classes.title} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                <Accordion className={classes.title} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1bh-content"
@@ -103,7 +103,7 @@ const JavaPathway = () => {
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion  className={classes.title}  expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                <Accordion className={classes.title} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1bh-content"
@@ -120,7 +120,7 @@ const JavaPathway = () => {
                     </AccordionDetails>
                 </Accordion>
 
-                <Accordion className={classes.title}  expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                <Accordion className={classes.title} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1bh-content"
@@ -147,7 +147,7 @@ const JavaPathway = () => {
                     </AccordionDetails>
                 </Accordion>
 
-                <Accordion  className={classes.title} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                <Accordion className={classes.title} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1bh-content"
@@ -165,7 +165,7 @@ const JavaPathway = () => {
                     </AccordionDetails>
                 </Accordion>
 
-                <Accordion  className={classes.title} expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                <Accordion className={classes.title} expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1bh-content"
@@ -176,32 +176,27 @@ const JavaPathway = () => {
                     <AccordionDetails className={classes.textContent}>
                         <Typography>
                             <ul className={classes.bullets}>
-                                <li>Setting up Java workspace</li>
-                                <li>Setting up Database</li>
-                                <li>maven settings</li>
-                                <li> java decompiler</li>
+                                <li> Setting up Java workspace</li>
+                                <li> Setting up Database</li>
+                                <li> maven settings</li>
+                                <li> Java decompiler</li>
                                 <li> maven building</li>
                                 <li> available market alternatives</li>
                                 <li> CICD pipeline</li>
                                 <li> Agile methodology</li>
-                                <li> project development models</li>
+                                <li> Project development models</li>
                                 <li>Jira</li>
                                 <li>Putty</li>
                                 <li>Kibana</li>
-                                <li>exception handling</li>
-                                <li>multithreading</li>
-                                <li>best practises</li>
+                                <li>Exception handling</li>
+                                <li>Best practises</li>
                                 <li>Building rest applications</li>
-                                <li>source management</li>
-                                <li>build tool</li>
-                                <li>oracle database</li>
                                 <li>Putty</li>
                                 <li>Loggers</li>
                                 <li>Microservices</li>
                                 <li>.yml, xml configurations</li>
-                                <li>Writing Test cases</li>
                                 <li>Authentication</li>
-                                <li>vDocker</li>
+                                <li>Docker</li>
                                 <li>Kubernetes</li>
                                 <li>Cloud</li>
                                 <li>Selenium</li>
@@ -214,7 +209,7 @@ const JavaPathway = () => {
             </div>
             <div className={classes.registration}>
                 <Button variant="contained" color="primary" onClick={() => history.push('/java-course')}>
-                    Register for this course
+                    Click here for more details
                 </Button>
             </div>
         </div>
