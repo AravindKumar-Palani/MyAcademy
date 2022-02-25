@@ -1,39 +1,32 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Java from '../images/java_developer.png';
+import ItSkill from '../images/Skill.png';
 import { useHistory } from 'react-router-dom';
+import "../styles/home.css";
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    border: 50
-  },
-});
 
-export default function ImgMediaCard() {
-  const classes = useStyles();
+
+export default function ImgMediaCard(props) {
   const history = useHistory();
+  const  {course}= props;
   return (
-    <Card className={classes.root}>
-      <CardActionArea onClick={() => history.push('/java-pathway')}>
+    <Card className="cardbox">
+      <CardActionArea onClick={() => history.push(course.path)}>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image={Java}
-          title="Contemplative Reptile"
+          height="250"
+          image={ItSkill}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Java Developer
+            {course.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            A well designed Pathway for Java Developers
+          {course.description}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -8,9 +8,7 @@ import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Home from '@material-ui/icons/Home';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { useHistory } from 'react-router-dom';
 
@@ -86,9 +84,7 @@ export default function Header() {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -138,7 +134,7 @@ export default function Header() {
         </IconButton>
         <p>Messages</p>
       </MenuItem>
-      <MenuItem>
+      {/* <MenuItem>
         <IconButton aria-label="show 11 new notifications" color="inherit">
           <Badge badgeContent={11} color="secondary">
             <NotificationsIcon />
@@ -156,7 +152,7 @@ export default function Header() {
           <AccountCircle />
         </IconButton>
         <p>Profile</p>
-      </MenuItem>
+      </MenuItem> */}
     </Menu>
   );
   const history = useHistory();
@@ -178,7 +174,7 @@ export default function Header() {
             My Learning Dashboard
           </Typography>
           <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
+          {/* <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={1} color="secondary">
                 <MailIcon />
@@ -199,7 +195,7 @@ export default function Header() {
             >
               <AccountCircle />
             </IconButton>
-          </div>
+          </div>*/
           <div className={classes.sectionMobile}>
             <IconButton
               aria-label="show more"
@@ -210,7 +206,7 @@ export default function Header() {
             >
               <MoreIcon />
             </IconButton>
-          </div>
+          </div> }
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
