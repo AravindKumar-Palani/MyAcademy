@@ -1,0 +1,10 @@
+.cardSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardbox {
+    max-width: 345;
+    border: 50;
+    margin: 20px;
+}
